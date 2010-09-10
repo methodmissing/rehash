@@ -63,3 +63,9 @@ end
 
 desc "clean build install"
 task :setup => %w(clean build install)
+
+desc 'Run benchmarks'
+task :bench do
+  ruby "bench/rehash.rb"
+end
+task :bench => :build
