@@ -1,0 +1,21 @@
+Simple by key / value rehashing for Ruby MRI
+  (c) 2010 Lourens Naudé (methodmissing) and James Tucker (raggi)
+
+  http://github.com/methodmissing/rehash
+
+This library works with Ruby 1.8 and 1.9 and is a more efficient
+implementation of the following Ruby code :
+
+  hash = { 'a' => 1, 'b' => 2 }
+  hash.rekey!(:upcase)
+  hash == { 'A' => 1, 'B' => 2 }
+
+  hash = { 1 => 'a, 2 => 'b' }
+  hash.revalue!(:upcase)
+  hash == { 1 => 'A', 2 => 'B' }
+
+To run the test suite:
+
+  rake
+
+Work in progress, thanks for watching!
