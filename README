@@ -3,8 +3,7 @@ Simple by key / value rehashing for Ruby MRI
 
   http://github.com/methodmissing/rehash
 
-This library works with Ruby 1.8 and 1.9 and is a more efficient
-implementation of the following Ruby code :
+This library works with Ruby 1.8 and 1.9 and exposes the following API :
 
   hash = { 'a' => 1, 'b' => 2 }
   hash.rekey!(:upcase)
