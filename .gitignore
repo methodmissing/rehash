@@ -1,0 +1,9 @@
+/Makefile
+/mkmf.log
+/doc
+*.o
+*.bundle
+*.so
+*.gem
+*.tmproj
+*.dSYM
